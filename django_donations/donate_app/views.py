@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
+<<<<<<< HEAD
     return render(request, 'index.html')
 
 def register(request):
@@ -54,3 +55,6 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return redirect("/")
+=======
+    return render(request, 'index.html')
+>>>>>>> 87160d9072b7f5b70882e5cd6c09a53e84a50f53

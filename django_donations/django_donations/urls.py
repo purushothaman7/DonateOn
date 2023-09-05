@@ -23,4 +23,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include('donate_app.urls')),
     
+<<<<<<< HEAD
 ]
+=======
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
+>>>>>>> 87160d9072b7f5b70882e5cd6c09a53e84a50f53
