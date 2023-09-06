@@ -41,36 +41,155 @@
     </div>
     <br><br>
     <div class="title" style="display: flex;gap: 30px;justify-content: center;">
-        <button>Request</button>
-        <button>Deliveries</button>
+        <button id="btn1" val="1">Request</button>
+        <button id="btn2" val="2">Deliveries</button>
     </div>
     <br>
-    <center>
-        <div style="align-items: center;">
-            <svg width="450" height="554" viewBox="0 0 450 554" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.6" filter="url(#filter0_b_11_29)">
-                    <path
-                        d="M0 14C0 6.26801 6.26801 0 14 0H436C443.732 0 450 6.26801 450 14V540C450 547.732 443.732 554 436 554H14C6.26802 554 0 547.732 0 540V14Z"
-                        fill="url(#paint0_linear_11_29)" />
-                </g>
-                <defs>
-                    <filter id="filter0_b_11_29" x="-50" y="-50" width="550" height="654" filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="25" />
-                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_11_29" />
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_11_29" result="shape" />
-                    </filter>
-                    <linearGradient id="paint0_linear_11_29" x1="1.28386e-06" y1="56.249" x2="437.322" y2="481.812"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#D9D9D9" stop-opacity="0.53" />
-                        <stop offset="1" stop-color="#D9D9D9" stop-opacity="0.3" />
-                    </linearGradient>
-                </defs>
-            </svg>
+    
+    <!-- request -->
+    <div class="carosel">
+        <div class="containerr">
+
+
+            <input type="radio" name="slider" class="d-none" id="s1" checked>
+            <input type="radio" name="slider" class="d-none" id="s2">
+            <input type="radio" name="slider" class="d-none" id="s3">
+            <input type="radio" name="slider" class="d-none" id="s4">
+            <input type="radio" name="slider" class="d-none" id="s5">
+
+            <div class="cards">
+                <label for="s1" id="slide1">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./cat.jpg" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">Nike SuperRep Go</span>
+                            <span class="lorem">Lorem ipsum dolor sit amet, sit amet adipiscing elit. Aenean vel ansd .
+                                Nullam
+                                lorem. Nulla eu
+                                sodales</span>
+                        </div>
+                        <a href="/contact" class="btn-contact">details</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s2" id="slide2">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./icon.png" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">Free Run Flyknit</span>
+                            <span class="lorem">Lorem ipsum dolor sit, adipiscing elit. Aenean vel sit ansd . Nullam
+                                lorem. Nulla eu
+                                sodales karma stellus</span>
+                        </div>
+                        <a href="/contact" class="btn-contact">details</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s3" id="slide3">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/Black Toe Union.jpg" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">Black Toe Union</span>
+                            <span class="lorem">Lorem ipsum dolor, sit amet let kar adipiscing. Aenean vel velit sit
+                                ansd .
+                                Nullam
+                                lorem. Nulla karma stellus</span>
+                        </div>
+                        <a href="/contact" class="btn-contact">details</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s4" id="slide4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/Retro High Og.jpg" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">Retro High Og</span>
+                            <span class="lorem">Lorem ipsum dolor sit, sit amet elit. Aenean sit amet sit amet vel velit
+                                sit
+                                ansd. Nulla eu
+                                sodales stellus</span>
+                        </div>
+                        <a href="/contact" class="btn-contact">details</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s5" id="slide5">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./user.png" alt="">
+
+                        </div>
+                        <div class="infos">
+                            <span class="name">Off-White Air Jordan</span>
+                            <span class="lorem">Lorem ipsum sit amet, sit amet elit. Aenean vel velit ansd . Nullam
+                                lorem. Nulla eu
+                                sodales stellus</span>
+                        </div>
+                        <a href="/contact" class="btn-contact">details</a>
+                        <div class="socials">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </label>
+            </div>
 
         </div>
-    </center>
+    </div>
+    
+
 </body>
+
+<script>
+   var button1 = document.getElementById("btn1");
+   button1.addEventListener("click", function() {
+    var value = button1.getAttribute("val");
+    console.log(value);
+   });
+   var button2 = document.getElementById("btn2");
+   button2.addEventListener("click", function() {
+    var value = button2.getAttribute("val");
+    console.log(value);
+   });
+</script>
+
 
 </html>
