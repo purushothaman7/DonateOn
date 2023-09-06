@@ -134,6 +134,19 @@ button{
 .social i{
   margin-right: 4px;
 }
+.social{
+    display: flex;
+    gap: 4px;
+}
+
+
+@media only screen and (max-width: 982px) {
+   .social{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+   }
+}
 
     </style>
 </head>
@@ -151,7 +164,8 @@ button{
 
         <button>Login</button>
         <div class="social">
-         <h4>Don't Have an account ? Register Here</h4>
+         <h4>Don't Have an account ? </h4>
+         <h4> Register Here</h4>
         </div>
     </form>
 </body>
