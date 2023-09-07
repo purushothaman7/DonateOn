@@ -12,20 +12,99 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <style>
-            body{
-                   background-color: black;
-                   color: rgb(4, 255, 0);
-               }
-               .btn1{
-                   background-color: black;
-               color: rgb(4, 255, 0);
-               border-radius: 6px;
-               }
-               .btn1:hover{
-                   background-color: rgb(13, 255, 0);
-                   color: black;
-                   border-radius: 6px;
-               }
+            body {
+	background: linear-gradient(-45deg, #bf00ff, #e73c7e,#e80c8c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
+}
+button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 13px;
+}
+
+button:hover {
+  background-color: #524e51;
+  color: white;
+  border-radius: 13px;
+  transition-duration: 0.4s;
+}
+.navbar-container ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar-container ul li {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.navbar-container ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 10px;
+	transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+	height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+}
+
+.navbar-container ul li.active-link .underline {
+	width: 100%;
+	background-color: white;
+}
+
+.navbar-container ul li:hover .underline {
+	background-color: white;
+	width: 100%;
+}
+
+.navbar-container ul li:hover a {
+}
+a {
+	outline: none;
+}
+.navbar-container ul li:active a {
+	transition: none;
+	color: rgba(255,255,255,0.76);
+}
+
+.navbar-container ul li:active .underline {
+	transition: none;
+	background-color: rgba(255,255,255,0.76);
+}
        </style>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -36,7 +115,7 @@
     <div class="container" style="padding: 2.5vh;">
         <div class="child1">
             <div style="display: flex;gap: 20px;align-items: center;">
-                <img src="./logo.png" style="width: 40px; height: 40px; ">
+                <img src="./Screenshot_2023-09-06_103036-removebg-preview.png" style="width: 60px; height: 60px; ">
                 <h2>DonateOn</h2>
             </div>
             <div style="margin-top: 1vh;">
@@ -55,9 +134,22 @@
         </div>
     </div>
     <br><br>
+
     <div class="title" style="display: flex;gap: 30px;justify-content: center;">
-        <button class="btn1">Request</button>
-        <button class="btn1">Deliveries</button>
+   <div class="navbar-container">
+            <ul>
+                <li class="nav-link active-link">
+                    <a href="#">Requests
+                    </a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Deliveries</a>
+                    <div class="underline"></div>
+                </li>
+                
+            </ul>
+        </div>
     </div>
     <br>
     <!-- request -->
@@ -188,6 +280,17 @@
 
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+
+    <center>
+        <h2>Load More...</h2>
+    </center>
     
 
 </body>
