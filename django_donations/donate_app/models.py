@@ -14,4 +14,4 @@ class Signup(models.Model):
     password = models.CharField(max_length=20)
     # choices = CITY_CHOICES, default = Chennai
 
-    
+
