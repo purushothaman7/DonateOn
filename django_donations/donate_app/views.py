@@ -4,7 +4,6 @@ from django.contrib.auth.models import User,auth
 from django.contrib import messages
 
 
-#is_login = False
 
 def index(request):
     return render(request, 'index.html')
@@ -58,6 +57,7 @@ def login(request):
         
         if user is not None:
             auth.login(request,user)
+            #is_login=True
             return redirect('after_login')
         
         else:
