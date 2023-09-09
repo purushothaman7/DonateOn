@@ -37,9 +37,9 @@
         <label for="productname">quantity of the product</label>
         <br>
         <div class="quantity">
-            <a href="#" class="quantity__minus"><span>-</span></a>
+            <a href="#" class="quantity__minus" style="font-size:xx-large;"><span>-</span></a>
             <input name="quantity" type="text" class="quantity__input" value="1">
-            <a href="#" class="quantity__plus"><span>+</span></a>
+            <a href="#" class="quantity__plus" style="font-size:xx-large;"><span>+</span></a>
           </div>
 
         <button>Request</button>
@@ -48,7 +48,7 @@
 </body>
 <style>
     body{
-        background-image:url("Salem.jpg");
+      background: -webkit-gradient(linear,  left top, right top, color-stop(0%,rgb(17, 24, 39)), color-stop(50%,rgb(88, 28, 135)), color-stop(100%,rgb(124, 58, 237)));
        }  
        .quantity {
   display: flex;
@@ -59,10 +59,10 @@
 .quantity__minus,
 .quantity__plus {
   display: block;
-  width: 22px;
+  width: 42px;
   height: 23px;
   margin: 0;
-  background: #dee0ee;
+  background: #000000;
   text-decoration: none;
   text-align: center;
   line-height: 23px;
@@ -74,13 +74,14 @@
 } 
 .quantity__minus {
   border-radius: 3px 0 0 3px;
+ 
 }
 .quantity__plus {
   border-radius: 0 3px 3px 0;
 }
 .quantity__input {
-  width: 32px;
-  height: 19px;
+  width: 62px;
+  height: 39px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -89,7 +90,7 @@
   border-left: 1px solid #dee0ee;
   border-right: 2px solid #dee0ee;
   background: #fff;
-  color: #8184a1;
+  color: #000000;
 }
 .quantity__minus:link,
 .quantity__plus:link {
