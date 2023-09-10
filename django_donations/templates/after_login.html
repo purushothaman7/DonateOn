@@ -1,8 +1,10 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-
+    <!-- {% if user.is_authenticated %} -->
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +17,7 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 <style>
+    
      body{
             background-color: black;
             color: rgb(4, 255, 0);
@@ -30,7 +33,9 @@
             border-radius: 6px;
         }
 </style>
+
 <body>
+    
     <div class="container" style="padding: 2.5vh;">
         <div class="child1">
             <div style="display: flex;gap: 20px;align-items: center;">
@@ -50,7 +55,7 @@
                     <li><a class="dropdown-item">My donations</a></li>
                     <li><a class="dropdown-item">Messages</a></li>
                     <li><a class="dropdown-item">Points</a></li>
-                    <li><a class="dropdown-item" href="/">Logout</a></li>
+                    <li><a class="dropdown-item" href="/logout">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -191,7 +196,6 @@
         </div>
     </div>
     
-
 </body>
 
 <script>
@@ -207,5 +211,5 @@
    });
 </script>
 
-
+<!-- {% endif %} -->
 </html>
